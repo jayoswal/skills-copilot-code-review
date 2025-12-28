@@ -667,7 +667,7 @@ footer {
 
 .announcement-banner {
   background-color: var(--success);
-  color: white;
+  color: #000000;
   text-align: center;
   padding: 15px;
   font-weight: bold;
