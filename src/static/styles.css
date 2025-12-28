@@ -666,9 +666,111 @@ footer {
 }
 
 .announcement-banner {
-  background-color: var(--success);
-  color: white;
+  background: linear-gradient(90deg, var(--success-light) 0%, var(--success) 100%);
+  color: var(--success);
   text-align: center;
-  padding: 15px;
+  padding: 15px 20px;
   font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  margin-bottom: 18px;
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.08);
+  transition: background 0.3s, color 0.3s;
+}
+
+#manage-announcements-btn {
+  background: var(--success-light);
+  color: var(--success);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 14px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 10px;
+  transition: background 0.2s, color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+#manage-announcements-btn:hover {
+  background: var(--success);
+  color: #fff;
+}
+
+.announcement-modal-content {
+  max-width: 420px;
+  padding: 24px 28px;
+  border-radius: 10px;
+  box-shadow: 0 6px 32px rgba(46, 125, 50, 0.13);
+  border: 1.5px solid var(--success-light);
+}
+.announcement-modal-content h3 {
+  color: var(--success);
+  margin-bottom: 18px;
+  text-align: center;
+}
+#announcement-list {
+  margin-bottom: 18px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+#announcement-list .announcement-item {
+  background: var(--success-light);
+  color: var(--success);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.98rem;
+}
+#announcement-list .announcement-actions button {
+  background: none;
+  border: none;
+  color: var(--success);
+  font-size: 1.1rem;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+#announcement-list .announcement-actions button:hover {
+  color: var(--error);
+}
+#announcement-form .form-group {
+  margin-bottom: 12px;
+}
+#announcement-form label {
+  display: block;
+  margin-bottom: 4px;
+  color: var(--success);
+  font-weight: 500;
+}
+#announcement-form input[type="text"],
+#announcement-form input[type="date"] {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid var(--border);
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+#announcement-form button[type="submit"] {
+  background: var(--success);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#announcement-form button[type="submit"]:hover {
+  background: var(--success-dark);
+}
+#announcement-modal-message {
+  margin-top: 10px;
+  text-align: center;
 }
